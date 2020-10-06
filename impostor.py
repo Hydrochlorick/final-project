@@ -17,3 +17,6 @@ class Impostor(Crewmate):
     def sabotage(self):
         choice = random.choice(self.tasks)
         return choice
+
+    def murder(self, name):
+        pass

@@ -23,6 +23,9 @@ class Crewmate:
         place = random.choice(self.game_map)
         self.location = place
 
+    def accuse(self, names=[]):
+        pass
+
 if __name__ == "__main__":
     testboi = Crewmate('red')
     testboi.add_task('Clean O2 Filter', 'Oxygen')

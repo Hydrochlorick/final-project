@@ -45,6 +45,14 @@ class Task:
         self.location = location
         self.is_completed = False
 
+    def generate_common_task(self):
+        t = random.choice(Task.common_tasks)
+        l = random.choice(Task.common_tasks[t])
+        return Task(t, l)
+
+    def finish_task(self):
+        pass
+
 if __name__ == "__main__":
     testers = list(Task.unique_tasks.items())
     rando, blando = random.choice(testers)
